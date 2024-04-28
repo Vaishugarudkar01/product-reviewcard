@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Product_Review Page</title>
+    <style>
+        body{
+            background-color: #FFDEE9;
+           background-image: linear-gradient(0deg, #f893b5 0%, #B5FFFC 100%);
+           height: 100vh;
+
+        }
+        .main-img{
+            display: block;
+            margin: 20px auto;
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+       
+            border-radius: 10px;
+           
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            object-fit: cover;
+          
+           
+        }
+        .img{
+           margin: 10px;
+           height: 70px;
+            width: 70px;
+            border-radius: 5px;
+            border: 1px solid rgb(177, 118, 118);
+            padding: 2px;
+          
+            cursor: pointer;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <img src="Blue1.webp" class="main-img" id="main_image" />
+
+    <div class="container">
+        <img src="Blue1.webp" class="img" onclick="ring('Blue1.webp')"/>
+         <img src="Blue2.webp" class="img " onclick="ring('Blue2.webp')"/>
+          <img src="Blue3.webp" class="img " onclick="ring('Blue3.webp')"/>
+           <img src="Austrian.webp" class="img" onclick="ring('Austrian.webp')"/>
+
+    </div>
+
+    <script>
+        function ring(imageName)
+        {
+          const mainImg=document.getElementById('main_image');
+          mainImg.src=imageName;
+        }
+        
+    </script>
+</body>
+</html>
